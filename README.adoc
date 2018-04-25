@@ -33,12 +33,14 @@ A list of Teachers, Administrators, Coaches, & Other Education Certification Hol
 
 |==========================
 
+
+//tu okej
 # replica → {w: 1, j: false}
 
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |3m32.511s  |3m24.278s |5m4.408s |5m5.557s |5m9.339s |00m02s
+|real time       |3m32.511s  |3m11.278s |3m5.416s |3m5.557s |3m9.339s |00m02s
 
 |user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
 
