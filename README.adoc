@@ -86,3 +86,8 @@ A list of Teachers, Administrators, Coaches, & Other Education Certification Hol
 |sys time        |0m24.198s  |0m25.550s |0m26.337 |0m29.912s |0m28.743s |00m26s
 
 |==========================
+
+
+## wnioski
+
+-Standalone wykonuje sie zdecydowanie najkrócej
