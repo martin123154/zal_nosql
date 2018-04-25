@@ -1,0 +1,86 @@
+# zal_nosql
+# Martin Zelek
+
+[BOEE Practitioners, Licenses, & Endorsements](https://data.iowa.gov/Education/BOEE-Practitioners-Licenses-Endorsements/bf6j-xvb7).
+A list of Teachers, Administrators, Coaches, & Other Education Certification Holders combined with license and endorsement information.
+
+
+
+# Standalone:
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Standalone | Average
+|real time       |1m19.695s  |1m22.012s |1m27.034s |1m26.865s |1m26.984s |00m00s
+
+|user time       |0m30.828s  |0m32.000s |0m31.547s |0m31.625s |0m31.438s |00m00s
+
+|sys time        |0m26.453s  |0m30.125s |0m25.828s |0m39.859s |0m26.297s |00m00s
+
+|==========================
+
+
+# replica { w : 1, wtimeout : 0 } 
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |00m02s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
+
+# replica → {w: 1, j: false}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |3m32.511s  |3m24.278s |5m4.408s |5m5.557s |5m9.339s |00m02s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
+
+# replica →  {w: 1, j: true}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |00m02s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
+
+# replica → {w: 2, j: false}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |00m02s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
+
+# replica5 → {w: 2, j: true}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |00m02s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
