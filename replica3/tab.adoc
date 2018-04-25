@@ -1,0 +1,10 @@
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, j:true} | Average
+|real time       |0m0.315s  |0m0.708s |0m0.635s |0m0.477s |0m0.330s |00m00s
+
+|user time       |0m0.031s  |0m0.000s |0m0.000s |0m0.000s |0m0.016s |00m00s
+
+|sys time        |0m0.063s  |0m0.047s |0m0.031s |0m0.063s |0m0.078s |00m00s
+
+|==========================
