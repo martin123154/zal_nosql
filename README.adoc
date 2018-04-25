@@ -5,6 +5,26 @@
 A list of Teachers, Administrators, Coaches, & Other Education Certification Holders combined with license and endorsement information.
 
 
+## Przykładowy rekord:
+
+# Folder Number   	5
+# First Name   	Meta
+# Last Name   	Muller
+# Practitioner Status Type ID   	1
+# Practitioner Status   	Active 
+# License Type ID   	15
+# License Type   	Standard License
+# License Original Issue Date   	07/01/1957
+# License Issue Date   	07/01/1957
+# License Expiration Date   08/30/1967	
+# Endorsement Type ID   60	
+# Endorsement Type   	Teacher,ESEA Title I Program	
+# Endorsement Issue Date  	07/01/1967
+
+# Uruchomienie
+
+Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
+
 
 # Standalone:
 
