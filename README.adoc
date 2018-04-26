@@ -5,6 +5,21 @@
 A list of Teachers, Administrators, Coaches, & Other Education Certification Holders combined with license and endorsement information.
 
 
+[source,js]
+ db.baza.stats( { scale : 1024 } )
+{
+        "ns" : "test.baza",
+        "size" : 949959,
+        "count" : 2579696,
+        "avgObjSize" : 377,
+        "storageSize" : 226936,
+        "capped" : false,
+        "wiredTiger" : {
+                "metadata" : {
+                        "formatVersion" : 1
+                },
+                
+                
 ## Przykładowy rekord:
 
 # Folder Number   	5
