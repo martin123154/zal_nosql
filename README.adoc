@@ -22,19 +22,21 @@ A list of Teachers, Administrators, Coaches, & Other Education Certification Hol
                 
 ## Przykładowy rekord:
 
-# Folder Number   	5
-# First Name   	Meta
-# Last Name   	Muller
-# Practitioner Status Type ID   	1
-# Practitioner Status   	Active 
-# License Type ID   	15
-# License Type   	Standard License
-# License Original Issue Date   	07/01/1957
-# License Issue Date   	07/01/1957
-# License Expiration Date   08/30/1967	
-# Endorsement Type ID   60	
-# Endorsement Type   	Teacher,ESEA Title I Program	
-# Endorsement Issue Date  	07/01/1967
+[source,js]
+ "_id" : ObjectId("5ae029271c3f159bede84e19"),
+        "Folder Number" : 10,
+        "First Name" : "JOHN",
+        "Last Name" : "PENCE",
+        "Practitioner Status Type ID" : 1,
+        "Practitioner Status" : "Active",
+        "License Type ID" : 15,
+        "License Type" : "Standard License",
+        "License Original Issue Date" : "02/27/1952",
+        "License Issue Date" : "02/27/1952",
+        "License Expiration Date" : "08/30/1962",
+        "Endorsement Type ID" : 81,
+        "Endorsement Type" : "Standard Secondary",
+        "Endorsement Issue Date" : "02/27/1952"
 
 # Uruchomienie
 
