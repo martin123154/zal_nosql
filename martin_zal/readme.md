@@ -119,6 +119,43 @@ ruby agg2.rb
 Skrypt ten tworzy diagram i zapisuje go do formatu pdf z ilością wystąpień typu licecji. Rozwiązanie znajduje się https://github.com/martin123154/zal_nosql/blob/master/martin_zal/bin/license_type.pdf
 
 
+## agg3.rb
+
+```
+ruby agg2.rb -l 5
+```
+
+Skrypt tworzy 5 najczęściej występujących typów licencji
+<table>
+  <tr>
+    <th>_id</th>
+    <th>count</th>
+  </tr>
+  <tr>
+    <td>Permanent Professional License</td>
+    <td>8318</td>
+  </tr>
+  <tr>
+    <td>Standard License</td>
+    <td>7327</td>
+  </tr>
+  <tr>
+    <td>Substitute License</td>
+    <td>1650</td>
+  </tr>
+  <tr>
+    <td>Temporary License</td>
+    <td>1557</td>
+  </tr>
+  <tr>
+    <td>Pre-Professional License</td>
+    <td>1035</td>
+  </tr>
+</table>
+<to_s/>
+
+
+
 ## insert_one
 
 Dzięki temu skryptowi można dodać do bazy jeden rekord
