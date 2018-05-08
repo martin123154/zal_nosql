@@ -57,7 +57,7 @@ Po wykonaniu tych kroków można przejść do agregacji.
 
 Skrypt ten zlicza najcześciej występujące nazwiska w bazie
 ```
-./agg1.rb -l 10
+ruby agg1.rb -l 10
 ```
 <table>
   <tr>
@@ -114,6 +114,11 @@ Skrypt ten zlicza najcześciej występujące nazwiska w bazie
 Dzięki temu skryptowi można dodać do bazy jeden rekord
 
 ## agg2.rb
+
+
+```
+ruby agg2.rb
+```
 
 Skrypt ten tworzy diagram i zapisuje go do formatu pdf z ilością wystąpień typu licecji. Rozwiązanie znajduje się https://github.com/martin123154/zal_nosql/blob/master/martin_zal/bin/license_type.pdf
 
