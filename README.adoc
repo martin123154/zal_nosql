@@ -1,0 +1,130 @@
+# zal_nosql
+# Martin Zelek
+
+[BOEE Practitioners, Licenses, & Endorsements](https://data.iowa.gov/Education/BOEE-Practitioners-Licenses-Endorsements/bf6j-xvb7).
+A list of Teachers, Administrators, Coaches, & Other Education Certification Holders combined with license and endorsement information.
+
+
+[source,js]
+ db.baza.stats( { scale : 1024 } )
+{
+        "ns" : "test.baza",
+        "size" : 949959,
+        "count" : 2579696,
+        "avgObjSize" : 377,
+        "storageSize" : 226936,
+        "capped" : false,
+        "wiredTiger" : {
+                "metadata" : {
+                        "formatVersion" : 1
+                },
+                
+                
+## Przykładowy rekord:
+
+[source,js]
+ "_id" : ObjectId("5ae029271c3f159bede84e19"),
+        "Folder Number" : 10,
+        "First Name" : "JOHN",
+        "Last Name" : "PENCE",
+        "Practitioner Status Type ID" : 1,
+        "Practitioner Status" : "Active",
+        "License Type ID" : 15,
+        "License Type" : "Standard License",
+        "License Original Issue Date" : "02/27/1952",
+        "License Issue Date" : "02/27/1952",
+        "License Expiration Date" : "08/30/1962",
+        "Endorsement Type ID" : 81,
+        "Endorsement Type" : "Standard Secondary",
+        "Endorsement Issue Date" : "02/27/1952"
+
+# Uruchomienie
+
+Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
+
+
+# Standalone:
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Standalone | Average
+|real time       |1m19.695s  |1m22.012s |1m27.034s |1m26.865s |1m26.984s |01m24s
+
+|user time       |0m30.828s  |0m32.000s |0m31.547s |0m31.625s |0m31.438s |00m31s
+
+|sys time        |0m26.453s  |0m30.125s |0m25.828s |0m39.859s |0m26.297s |00m31s
+
+|==========================
+
+
+# replica { w : 1, wtimeout : 0 } 
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |05m17s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m36s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m30s
+
+|==========================
+
+
+//tu okej
+# replica → {w: 1, j: false}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |3m32.432ss  |3m11.278s |3m5.416s |3m4.235s |3m8.117s |03m18s
+
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+
+|==========================
+
+# replica →  {w: 1, j: true}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |05m18s
+
+|user time       |0m36.178s  |0m31.312s |0m36.341s |0m36.511s |0m32.634s |00m34s
+
+|sys time        |0m24.412s  |0m21.198s |0m23.631s |0m27.109s |0m33.185s |00m27s
+
+|==========================
+
+# replica → {w: 2, j: false}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |3m30.124s  |3m28.874s |3m27.418s |3m29.443s |3m31.129s |03m28s
+
+|user time       |0m36.743s  |0m34.245s |0m31.654s |0m32.389s |0m33.631s |00m32s
+
+|sys time        |0m25.498s  |0m24.441s |0m23.963s |0m27.279s |0m25.145s |00m25s
+
+|==========================
+
+# replica → {w: 2, j: true}
+
+[width='100%',cols='>s,^,^,^,^,^,^',options='header']
+|==========================
+|      5+|Replica Set {w:1, wtimeout:0} | Average
+|real time       |5m33.820s  |5m24.712s |5m40.365s |5m35.125s |5m29.330s |05m33s
+
+|user time       |0m34.243s  |0m34.031s |0m37.251s |0m35.391s |0m36.156s |00m35s
+
+|sys time        |0m24.198s  |0m25.550s |0m26.337 |0m29.912s |0m28.743s |00m26s
+
+|==========================
+
+
+## wnioski
+
+-Standalone wykonuje sie zdecydowanie najkrócej
