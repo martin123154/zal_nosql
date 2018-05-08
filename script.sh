@@ -6,17 +6,7 @@ dane=baza.zip
 
 
 
-#Standalone
-mkdir -p standalone
 
-for ((i=1; $i<= 5;i++)) ; do
-(time unzip -c $dane | mongoimport -d test -c baza --type csv --headerline --drop) > standalone/"$i.txt" 2>&1
-tail -3 standalone/"$i.txt" > standalone/"czas_$i.txt"
-rm standalone/"$i.txt"
-done
-
-exec ./avg.sh "$PWD/standalone" &
-exec ./tabelka.sh "$PWD/standalone" "Standalone" &
 
 
 #Replica Set {w:1, wtimeout:0}
