@@ -109,5 +109,11 @@ Skrypt ten zlicza najcześciej występujące nazwiska w bazie
 
 
 
+## insert_one
 
+Dzięki temu skryptowi można dodać do bazy jeden rekord
+
+## agg2.rb
+
+Skrypt ten tworzy diagram i zapisuje go do formatu pdf z ilością wystąpień typu licecji. Rozwiązanie znajduje się https://github.com/martin123154/zal_nosql/blob/master/martin_zal/bin/license_type.pdf
 
