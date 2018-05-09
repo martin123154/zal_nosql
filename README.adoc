@@ -62,7 +62,7 @@ Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |05m17s
+|real time       |17m40.511s  |16m15.277s |15m12.408s |15m15.557s |15m27.339s |15m51s
 
 |user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m36s
 
@@ -77,11 +77,11 @@ Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |3m32.432ss  |3m11.278s |3m5.416s |3m4.235s |3m8.117s |03m18s
+|real time       |10m04.432ss  |9m33.278s |9m15.416s |9m12.235s |9m24.117s |09m54s
 
-|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m00s
+|user time       |0m37.156s  |0m36.031s |0m35.891s |0m35.391s |0m36.156s |00m05s
 
-|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m00s
+|sys time        |0m27.969s  |0m28.391s |0m33.313s |0m36.109s |0m27.125s |00m31s
 
 |==========================
 
@@ -90,7 +90,7 @@ Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |5m48.511s  |5m23.277s |5m4.408s |5m5.557s |5m9.339s |05m18s
+|real time       |17m02.511s  |16m09.277s |15m12.408s |15m15.557s |15m27.339s |15m54s
 
 |user time       |0m36.178s  |0m31.312s |0m36.341s |0m36.511s |0m32.634s |00m34s
 
@@ -103,7 +103,7 @@ Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |3m30.124s  |3m28.874s |3m27.418s |3m29.443s |3m31.129s |03m28s
+|real time       |10m30.124s  |10m24.874s |10m26.418s |10m29.443s |10m33.129s |10m27s
 
 |user time       |0m36.743s  |0m34.245s |0m31.654s |0m32.389s |0m33.631s |00m32s
 
@@ -116,7 +116,7 @@ Importowanie i liczenie czasu Uruchamiamy komendą ./script.sh
 [width='100%',cols='>s,^,^,^,^,^,^',options='header']
 |==========================
 |      5+|Replica Set {w:1, wtimeout:0} | Average
-|real time       |5m33.820s  |5m24.712s |5m40.365s |5m35.125s |5m29.330s |05m33s
+|real time       |16m39.820s  |16m12.712s |16m40.365s |16m45.125s |16m27.330s |16m39s
 
 |user time       |0m34.243s  |0m34.031s |0m37.251s |0m35.391s |0m36.156s |00m35s
 
