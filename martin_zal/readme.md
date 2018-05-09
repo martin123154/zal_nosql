@@ -154,6 +154,14 @@ Skrypt tworzy 5 najczęściej występujących typów licencji
 </table>
 <to_s/>
 
+## agg5.rb
+
+
+```
+ruby agg5.rb -d license
+```
+
+Skrypt ten gdy w argumencie podany nazwe licensji zwraca nam statystyki z kolumny Endorsment type (ile razy dany typ wystepuje dla wybranej licencji)
 
 
 ## insert_one
